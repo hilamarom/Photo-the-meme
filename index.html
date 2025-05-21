@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Photo The Meme</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="screen" id="screen1">
+    <img src="logo.png" alt="Logo" class="logo" />
+    <button onclick="nextScreen(2)">Start a Game</button>
+    <button>Join with Code</button>
+  </div>
+
+  <div class="screen hidden" id="screen2">
+    <h2>834A2Q</h2>
+    <p>Invite Friends</p>
+    <button onclick="nextScreen(3)">Start</button>
+  </div>
+
+  <div class="screen hidden" id="screen3">
+    <h2>Shuffling Photos...</h2>
+    <div class="photos">
+      <img src="cat.jpg" alt="Cat" />
+      <img src="dog.jpg" alt="Dog" />
+      <img src="girl.jpg" alt="Girl" />
+    </div>
+    <button>Shuffle</button>
+    <button onclick="nextScreen(4)">Approve</button>
+  </div>
+
+  <div class="screen hidden" id="screen4">
+    <img src="meme.jpg" alt="Meme" class="meme-image" />
+    <button>New Meme</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
